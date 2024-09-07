@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://edu.umch.de/wp-content/uploads/2018/09/favicon-32x32.opt_.png"
+        type="image/x-icon">
+
+    <style>
+        .banner {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-left img {
+            width: 100%;
+            height: auto;
+        }
+
+        .banner-right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        .hospital-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+        }
+
+        .icon-right {
+            width: auto;
+            height: 50px;
+            margin-right: 50px;
+        }
+
+        .icon-left {
+            width: auto;
+            height: 50px;
+        }
+    </style>
+    <style>
+        .svg {
+            fill: #fff;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
+            font-weight: bold;
+        }
+
+        .ok-svg {
+            fill: #fff;
+            width: 50px;
+            height: 50px;
+            margin-right: 5px;
+            margin-bottom: 12px;
+        }
+
+
+        .navbar-text {
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+        }
+
+
+        .jetzt {
+            background-color: #ffe943;
+            color: #1b3a54;
+            cursor: pointer;
+            padding: 1px 20px;
+            border: 0;
+            padding: 6px 20px;
+            border-radius: 20px;
+        }
+
+        .whatsup-icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+        }
+
+        .circle-container {
+            width: 30px;
+            height: 30px;
+            border: 3px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle-container img {
+            fill: #fff;
+            width: 20px;
+            height: 20px;
+            color: #fff;
+            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
+            font-weight: bold;
+        }
+
+        .germany-navbar {
+            margin-left: 50px;
+        }
+
+        .germany-navbar i {
+            margin-left: 5px;
+        }
+
+        .navbar-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .navbar-right svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+            background-color: #004f71;
+            padding: 10px 50px;
+        }
+    </style>
+
+    <style>
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 5px 10px;
+            max-width: 300px;
+            margin-right: 50px;
+        }
+
+        .search-input {
+            border: none;
+            outline: none;
+            flex-grow: 1;
+            background-color: #1b3a54;
+        }
+
+        .search-icon {
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>
+
+
+
+    <style>
+        .about-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #1b3a54;
+            margin-bottom: 70px;
+        }
+
+        .about-img {
+            width: 150px;
+            height: 750px;
+        }
+
+        .about-card {
+            background-color: #ccc;
+            margin: 20px 500px 10px 0;
+            color: #1b3a54;
+            padding: 20px;
+            width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: row;
+            color: #1b3a54;
+        }
+    </style>
+
+    <style>
+        .properties {
+            background-color: #f3f4f6;
+        }
+
+        .prop-icon {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 4px 20px;
+        }
+
+        .properties button {
+            background-color: #ffe943;
+            color: #1b3a54;
+            cursor: pointer;
+            padding: 1px 20px;
+            border: 0;
+            padding: 6px 20px;
+            border-radius: 20px;
+            width: 200px;
+            margin: 5px auto;
+
+        }
+
+        .properties h1 {
+            margin-top: 2px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: #1b3a54;
+        }
+    </style>
+
+    <style>
+        .card-three {
+            background-color: #f3f4f6;
+            color: #1b3a54;
+            margin-top: 10px;
+            height: 100%;
+        }
+
+        .card-three img {
+            width: 100%;
+        }
+
+        .card-three .card-body {
+            padding: 20px 30px;
+        }
+
+        .three {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 50px 20px;
+        }
+    </style>
+
+    <style>
+        .interview {
+            padding: 50px;
+        }
+
+        .card-header-one {
+            background-color: #009cd3;
+            width: 100%;
+            height: 50px;
+        }
+
+        .card-header-two {
+            background-color: #00577b;
+            width: 100%;
+            height: 50px;
+        }
+
+        .card-text {
+            color: #1b3a54;
+        }
+
+        .card-header-one,
+        .card-header-two {
+            text-align: left;
+        }
+
+        .card-header-one p {
+            margin-top: 12px;
+            font-size: 20px;
+            font-weight: bold;
+
+            margin-left: 20px;
+        }
+
+        .card-header-two p {
+            margin-top: 12px;
+            font-size: 20px;
+            font-weight: bold;
+
+            margin-left: 20px;
+            color: #fff;
+        }
+
+        .interview-card {
+            height: 100%;
+            background-color: #fff;
+            margin-top: 50px;
+        }
+
+        .interview-card img {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .interview-card .card-body {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .last-interview {
+            background: linear-gradient(to left, #00678f, #018dc0);
+            margin: 50px 0;
+            padding: 50px;
+            height: 75%;
+        }
+
+        .interview-card-one {
+            height: 75%;
+            background-color: #fff;
+            margin-top: 50px;
+        }
+    </style>
+
+
+
+    <style>
+        /* Custom styles for the layout */
+        .fixed-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .content-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .custom-card {
+            width: 100%;
+            border: 0;
+            background-color: #f3f4f6;
+            padding: 20px;
+            border-radius: 0;
+            color: #1b3a54;
+        }
+    </style>
+
+    <style>
+        .two-cards {
+            background-color: #f3f4f6;
+            padding: 100px;
+        }
+
+        .two-card {
+            border: 0;
+            text-align: center;
+        }
+
+        .two-card .card-body {
+            padding: 10px;
+            color: #1b3a54;
+            margin-top: 45px;
+        }
+
+        .two-card .card-body .card-title {
+            font-weight: bold;
+        }
+
+        .two-card-btn {
+            background-color: #b3b3b3;
+            color: #1b3a54;
+            border-radius: 20px;
+            padding: 8px 60px;
+            cursor: pointer;
+            border: 0;
+            margin-top: 30px;
+        }
+    </style>
+
+    <style>
+        .camera-btn {
+            border-radius: 30px;
+            color: #1b3a54;
+            border: 0;
+            padding: 5px 20px;
+            background-color: #ffe943;
+        }
+
+        .camera-btn span {
+            margin: 5px;
+        }
+
+        .camera-btn img {
+            fill: #fff;
+            width: 30px;
+            height: 30px;
+            color: #1b3a54;
+            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
+            font-weight: bold;
+        }
+    </style>
+
+    <style>
+        .blue-button {
+            padding: 8px 20px;
+            border: 1px solid #1b3a54;
+            border-radius: 20px;
+            color: #1b3a54;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .download-icon {
+            margin: 10px auto;
+            width: 65px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+    <style>
+        .responsive-separator {
+            border: none;
+            height: 1px;
+            background-color: #fff;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .icon-list {
+            background: linear-gradient(to bottom, #00577b, #009cd3);
+        }
+    </style>
+
+    <style>
+        .separator {
+            width: 2px;
+            height: 24px;
+            background-color: white;
+        }
+
+        .site-links {
+            color: #1b3a54;
+            margin: 0 auto;
+            width: 75%;
+        }
+    </style>
+
+    <style>
+        .font-bold {
+            font-weight: bold;
+        }
+    </style>
+
+    <style>
+        /* Custom styles for rows */
+        .row-blue {
+            background-color: #1b3a54;
+            color: white;
+            /* White text for better contrast on blue background */
+        }
+
+        .row-white {
+            background-color: white;
+            color: black;
+            /* Default black text for contrast on white background */
+        }
+    </style>
+
+    <style>
+        .primary-color {
+            color: #1b3a54;
+        }
+
+        .secondary-color {
+            color: #004d6e;
+        }
+
+        .text-decoration-none {
+            text-decoration: none;
+            list-style-type: none;
+        }
+    </style>
+
+    <style>
+        .text-right-align {
+            text-align: right;
+        }
+
+        .card-horizontal {
+            display: flex;
+            flex: 1 1 auto;
+            background-color: #dfe4e8;
+        }
+
+        .card-horizontal img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-right {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body-right {
+            padding: 25px;
+        }
+
+        .card-color {
+            background-color: #f4f4f4;
+        }
+    </style>
+
+
+    <style>
+        .bg-gradient {
+            background: linear-gradient(to bottom, #005072, #009ad0);
+        }
+    </style>
+
+    <style>
+        .left-part {
+            background: linear-gradient(to bottom, #005072, #009ad0);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .left-content i {
+            font-size: 40px;
+            /* Icon size */
+            margin-bottom: 15px;
+        }
+
+        .right-part img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <style>
+        .slider-container {
+            margin-bottom: 30px;
+        }
+
+        .card {
+            margin: 10px;
+        }
+
+        .slider-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .pagination-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .pagination-dots li {
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            bottom: 0;
+            top: auto;
+            width: 5%;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .circle-camera {
+            padding: 4px 5px;
+            border: 3px solid #ffe943;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav
+        class="navbar navbar-expand-lg navbar-light text-white d-flex justify-content-center align-items-center text-center">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link text-light" href="#">News </a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Events</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Press</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Karriere</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Shop</a></li>
+            </ul>
+            <div class="separator"></div>
+            <div class="navbar-text">
+                <img style="margin-right: 5px;margin-left: 20px;" class="svg" src="assets/icon/Icon Telefon.svg"
+                    alt="Telefon">
+                <span>Admissions</span>
+                <span style="margin-right: 20px;">+49 (0) 40-2093485-00</span>
+                <img style="margin-right: 5px;" class="svg" src="assets/icon/Icon Telefon.svg" alt="Telefon">
+                <span>Admissions</span>
+                <span style="margin-right: 20px;">+49 (0) 40-2093485-00</span>
+            </div>
+            <div class="separator"></div>
+            <div class="navbar-nav ms-auto">
+                <div class="circle-container">
+                    <img src="assets/icon/Icon Camera.svg" alt="Camera Icon">
+                </div>
+                <img class="whatsup-icon" src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png"
+                    alt="whatsup-icon">
+                <div class="germany-navbar">
+                    <img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/128/555/555613.png" alt="">
+                    <i class="fas fa-chevron-down ml-2"></i>
+                </div>
+            </div>
+            <div class="navbar-nav ms-auto navbar-right">
+                <div class="separator"></div>
+                <div style="margin-left: 20px;" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                    <a class="link" href="sign-in">Sign-in</a>
+                    <i style="margin-right: 10px;" class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header style="background-color: #1b3a54; padding: 10px 50px;"
+        class="d-flex justify-content-between align-items-center pt-4 pb-4 header">
+        <div class="d-flex">
+            <img src="assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png" alt="Image 1" class="icon-right me-2">
+            <img src="assets/logos/umch_blanco-opt.png" alt="Image 2" class="icon-left">
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="search-container">
+                <input type="text" class="search-input">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <button class="jetzt">Jetzt bewerben</button>
+        </div>
+    </header>
+
+    <div class="my-3 site-links">
+        <div class="row">
+            <li class="col list-group-item"><a href="#"
+                    class="w-100 list-group-item list-group-item-action me-4">Universität <i
+                        class="fas fa-chevron-down"></i></a></li>
+            <li class="col list-group-item"><a href="#" class="w-100 list-group-item list-group-item-action">Studium <i
+                        class="fas fa-chevron-down"></i></a></li>
+            <li class="col list-group-item"><a href="#"
+                    class="w-100 list-group-item list-group-item-action">Lehrkrankenhäuser <i
+                        class="fas fa-chevron-down"></i></a></li>
+            <li class="col list-group-item"><a href="#"
+                    class="w-100 list-group-item list-group-item-action">Forschung</a></li>
+            <li class="col list-group-item"><a href="#" class="w-100 list-group-item list-group-item-action">Aktuelles
+                    <i class="fas fa-chevron-down"></i></a> </li>
+            <li class="col list-group-item"><a href="#" class="w-100 list-group-item list-group-item-action">Kontakt</a>
+            </li>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="container-fluid">
+        <div class="row banner">
+            <!-- Left Image (80% width) -->
+            <div class="col-8 banner-left p-0">
+                <img src="https://img.freepik.com/free-photo/person-attending-official-event_23-2151054268.jpg?ga=GA1.1.1061246980.1720825066&semt=ais_hybrid"
+                    alt="Left Image">
+            </div>
+
+            <!-- Right Image (20% width) -->
+            <div class="col-4 banner-right p-0">
+                <img src="assets/bilder/b-header.svg" alt="Right Image">
+            </div>
+
+            <!-- Centered Text -->
+            <div class="banner-text">
+                <h1 class="text-center">Medizincampus
+                    der Zukunft</h1>
+                <h4 class="text-center">Hochmoderne medizinische Ausbildung
+                    im Herzen Hamburgs</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="middle">
+        <div class="col-md-2 about-img">
+            <img src="assets/bilder/Blue Color gradient2.png" alt="Blue Color gradient2" class="about-img">
+        </div>
+        <div style="margin: 50px auto;" class="col-md-6">
+            <div class="about-icons mt-1">
+                <i class="fas fa-home me-2"></i>
+                <span>Universität</span>
+                <i class="fas fa-chevron-right mx-2"></i>
+                <span>Campus Hamburg</span>
+            </div>
+
+            <div class="my-2">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <p class="text-center">Technologie trifft Medizin</p>
+                        <h3 class="text-center mb-6">Modernste Ausstattung und hochdigitaler
+                            Universitätscampus in Hamburg</h3>
+                        <img src="3d.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- card with image and text -->
+    <div class="container my-5">
+        <div class="card d-flex flex-row">
+            <!-- Left part with blue background and icon + text -->
+            <div class="left-part col-md-6">
+                <div class="left-content">
+                    <img width="30" height="30" src="assets/icon/Icon Hightec.svg" alt="Hightec">
+                    <h3>Entdecke eine hochmoderne
+                        medizinische Ausbildung
+                        in einem internationalen
+                        Umfeld.</h3>
+                    <p>Mit dem digitalen Campus geht der UMCH neue Wege in der
+                        Ausbildung der Ärztinnen und Ärzte von morgen. Die Bereitstel-
+                        lung einer hochmodernen digitalen Infrastruktur wurde bereits
+                        frühzeitig im Rahmen der Campuserrichtung im Jahr 2019 be-
+                        gonnen umzusetzen. Der UMCH verfügt über eine umfassende
+                        digitale Ausstattung, die stetig nachgerüstet wird und virtuell
+                        basierte Lehr- und Lernprozesse ermöglicht. Damit bieten wir
+                        unseren Studierenden herausragende Studienbedingungen.</p>
+                </div>
+            </div>
+
+            <!-- Right part with an image -->
+            <div class="right-part col-md-6">
+                <img src="vr.png" alt="Sample Image">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- photo sliders -->
+
+    <div class="container">
+
+        <!-- First Photo Slider -->
+        <div id="slider1" class="carousel slide slider-container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="" style=" background: linear-gradient(to left, #005072, #009ad0);">
+                                <img src="card1.png" class="card-img-top" alt="Image 1">
+                                <div class="card-body p-4 text-white">
+                                    <div class="circle-camera">
+                                        <img src="assets/icon/Icon Camera.svg" width="25" height="25">
+                                    </div>
+                                    <h4 class="mt-4">Livestreaming – Kursinhalte
+                                        nachhaltig verfügbar</h4>
+                                    <p class="card-text text-white">Der Campus ist mit Technik zum Livestreaming
+                                        ausgestat-
+                                        tet. Sämtliche Vorlesungs- und Seminarräume sind mit
+                                        mehreren High Definition-Kameras bestückt, mit denen die
+                                        Lehrveranstaltungen aus verschiedenen Perspektiven live
+                                        Die Studierenden profitieren zu
+                                        lichkeit zahlreicher digitaler Bib
+                                        Spektrum an englischsprachige
+                                        Auf unserer digitalen Lernplattform erhalten die UMCH-Stu-
+                                        bereitstellen. Sie können uneing
+                                        dierenden an einem Ort gebündelt alle Informationen und
+                                        tätseigene Online-Bibliothek zu
+                                        Neuigkeiten rund um das Studium und den Campus. Sie
+                                        übertragen und aufgezeichnet werden. Gleichzeitig kön-
+                                        unter anderem bei SpringerLink
+                                        bildet die Grundlage für das digitale Lernen und die Kom-
+                                        nen die Studierende, die online am Unterricht teilnehmen,
+                                        bridge Journals recherchiert we
+                                        munikation unter den Studierenden und Dozentinnen und
+                                        zudem die Präsentationen einsehen und den schriftlichen
+                                        Anmerkungen folgen, die per interaktivem Smartboard von
+                                        den Dozentinnen und Dozenten vorgenommen werden.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="" style=" background: linear-gradient(to left, #005072, #009ad0);">
+                                <img src="card2.png" class="card-img-top" alt="Image 1">
+                                <div class="card-body p-4 text-white">
+                                    <div class="circle-camera">
+                                        <img src="assets/icon/Icon Camera.svg" width="25" height="25">
+                                    </div>
+                                    <h4 class="mt-4">Livestreaming – Kursinhalte
+                                        nachhaltig verfügbar</h4>
+                                    <p class="card-text text-white">Der Campus ist mit Technik zum Livestreaming
+                                        ausgestat-
+                                        tet. Sämtliche Vorlesungs- und Seminarräume sind mit
+                                        mehreren High Definition-Kameras bestückt, mit denen die
+                                        Lehrveranstaltungen aus verschiedenen Perspektiven live
+                                        Die Studierenden profitieren zu
+                                        lichkeit zahlreicher digitaler Bib
+                                        Spektrum an englischsprachige
+                                        Auf unserer digitalen Lernplattform erhalten die UMCH-Stu-
+                                        bereitstellen. Sie können uneing
+                                        dierenden an einem Ort gebündelt alle Informationen und
+                                        tätseigene Online-Bibliothek zu
+                                        Neuigkeiten rund um das Studium und den Campus. Sie
+                                        übertragen und aufgezeichnet werden. Gleichzeitig kön-
+                                        unter anderem bei SpringerLink
+                                        bildet die Grundlage für das digitale Lernen und die Kom-
+                                        nen die Studierende, die online am Unterricht teilnehmen,
+                                        bridge Journals recherchiert we
+                                        munikation unter den Studierenden und Dozentinnen und
+                                        zudem die Präsentationen einsehen und den schriftlichen
+                                        Anmerkungen folgen, die per interaktivem Smartboard von
+                                        den Dozentinnen und Dozenten vorgenommen werden.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="" style=" background: linear-gradient(to left, #005072, #009ad0);">
+                                <img src="https://edu.umch.de/wp-content/uploads/2021/11/Lehre.jpg" class="card-img-top"
+                                    alt="Image 1">
+                                <div class="card-body p-4 text-white">
+                                    <div class="circle-camera">
+                                        <img src="assets/icon/Icon Camera.svg" width="25" height="25">
+                                    </div>
+                                    <h4 class="mt-4">Livestreaming – Kursinhalte
+                                        nachhaltig verfügbar</h4>
+                                    <p class="card-text text-white">Der Campus ist mit Technik zum Livestreaming
+                                        ausgestat-
+                                        tet. Sämtliche Vorlesungs- und Seminarräume sind mit
+                                        mehreren High Definition-Kameras bestückt, mit denen die
+                                        Lehrveranstaltungen aus verschiedenen Perspektiven live
+                                        Die Studierenden profitieren zu
+                                        lichkeit zahlreicher digitaler Bib
+                                        Spektrum an englischsprachige
+                                        Auf unserer digitalen Lernplattform erhalten die UMCH-Stu-
+                                        bereitstellen. Sie können uneing
+                                        dierenden an einem Ort gebündelt alle Informationen und
+                                        tätseigene Online-Bibliothek zu
+                                        Neuigkeiten rund um das Studium und den Campus. Sie
+                                        übertragen und aufgezeichnet werden. Gleichzeitig kön-
+                                        unter anderem bei SpringerLink
+                                        bildet die Grundlage für das digitale Lernen und die Kom-
+                                        nen die Studierende, die online am Unterricht teilnehmen,
+                                        bridge Journals recherchiert we
+                                        munikation unter den Studierenden und Dozentinnen und
+                                        zudem die Präsentationen einsehen und den schriftlichen
+                                        Anmerkungen folgen, die per interaktivem Smartboard von
+                                        den Dozentinnen und Dozenten vorgenommen werden.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more carousel items here if needed -->
+            </div>
+
+            <div class="slider-buttons">
+                <!-- Pagination Dots -->
+                <ul class="pagination-dots">
+                    <li data-bs-target="#slider1" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
+                </ul>
+
+                <div class="d-flex">
+                    <button class="carousel-control-prev me-2" type="button" data-bs-target="#slider1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next ms-2" type="button" data-bs-target="#slider1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Photo Slider (same structure as first slider) -->
+        <div id="slider2" class="carousel slide slider-container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <img src="card3.png" class="card-img-top" alt="Image 1">
+                                <div class="card-body p-4 text-white" style=" background: linear-gradient(to left, #005072, #009ad0);">
+                                    <h4 class="text-white">Biologie-Labs mit neuester Technik</h4>
+                                    <p class="text-white">Unsere hochmodernen Biologie-Labore sind ein zentraler Be-
+                                        standteil des UMCH. Sie bieten den Studierenden nicht nur die
+                                        Möglichkeit, theoretisches Wissen in die Praxis umzusetzen,
+                                        sondern auch innovative Forschung und Experimente durch-
+                                        zuführen. Mit neuester Technologie und umfangreicher Aus-
+                                        stattung unterstützen unsere Labore eine breite Palette von
+                                        biologischen Studien und Forschungsprojekten. So können die
+                                        Studierenden in einem realitätsnahen Umfeld arbeiten, ihre
+                                        praktischen Fähigkeiten vertiefen und wichtige Erkenntnisse
+                                        für ihre zukünftige Karriere gewinnen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <img src="card4.png" class="card-img-top" alt="Image 2">
+                                <div class="card-body p-4 text-white" style=" background: linear-gradient(to left, #005072, #009ad0);">
+                                    <h4 class="text-white">Hochmoderne Chemie-Labs</h4>
+                                    <p class="text-white">Als zentraler Bestandteil der Ausbildung ermöglichen die
+                                        UMCH Chemie-Labs es den Studierenden, theoretisches Wis-
+                                        sen praxisnah anzuwenden und innovative Forschung sowie
+                                        Experimente durchzuführen. Ausgestattet mit neuester Tech-
+                                        nologie und umfangreicher Ausrüstung, bieten die Labore viel-
+                                        fältige Unterstützung für chemische Studien und Forschungs-
+                                        projekte.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <img src="card4.png" class="card-img-top" alt="Image 2">
+                                <div class="card-body p-4 text-white" style=" background: linear-gradient(to left, #005072, #009ad0);">
+                                    <h4 class="text-white">Hochmoderne Chemie-Labs</h4>
+                                    <p class="text-white">Als zentraler Bestandteil der Ausbildung ermöglichen die
+                                        UMCH Chemie-Labs es den Studierenden, theoretisches Wis-
+                                        sen praxisnah anzuwenden und innovative Forschung sowie
+                                        Experimente durchzuführen. Ausgestattet mit neuester Tech-
+                                        nologie und umfangreicher Ausrüstung, bieten die Labore viel-
+                                        fältige Unterstützung für chemische Studien und Forschungs-
+                                        projekte.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-buttons">
+                <!-- Pagination Dots -->
+                <ul class="pagination-dots">
+                    <li data-bs-target="#slider2" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#slider2" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#slider2" data-bs-slide-to="2"></li>
+                </ul>
+
+                <div class="d-flex">
+                    <button class="carousel-control-prev me-2" type="button" data-bs-target="#slider2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next ms-2" type="button" data-bs-target="#slider2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Photo Slider (same structure as the other sliders) -->
+        <div id="slider3" class="carousel slide slider-container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 1">
+                                <div class="card-body">
+                                    <p class="card-text">Slider 3, Image 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 2">
+                                <div class="card-body">
+                                    <p class="card-text">Slider 3, Image 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 3">
+                                <div class="card-body">
+                                    <p class="card-text">Slider 3, Image 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-buttons">
+                <!-- Pagination Dots -->
+                <ul class="pagination-dots">
+                    <li data-bs-target="#slider3" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#slider3" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#slider3" data-bs-slide-to="2"></li>
+                </ul>
+
+                <div class="d-flex">
+                    <button class="carousel-control-prev me-2" type="button" data-bs-target="#slider3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next ms-2" type="button" data-bs-target="#slider3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Text and Button -->
+    <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <p style="color: #1b3a54;font-weight: bold;font-size: 20px;">Vereinbaren Sie kostenlos und unverbindlich
+                einen
+                Online-Beratungstermin inklusive virtueller Campustour.</p>
+            <button class="camera-btn">
+                <i class="fas fa-camera"></i>
+                <span>Online Beratungstermin</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white px-4 py-4" style="background-color: #004d6e;">
+        <!-- First Row -->
+        <div class="container mx-auto row row-cols-1 row-cols-md-4 g-3 px-4 py-4">
+            <!-- First Column: Image with text below it -->
+            <div class="col text-center">
+                <img width="200px" height="100px" src="assets/logos/umch_blanco-opt.png" alt="umch_blanco"
+                    class="d-block mx-auto mb-3">
+                <p class="mt-2 text-left small">Universitätsmedizin Neumarkt am Mieresch Campus Hamburg</p>
+            </div>
+            <!-- Second Column: Contact Information -->
+            <div class="col text-center text-md-start small">
+                <p>Albert-Einstein-Ring 11-15</p>
+                <p>22761 Hamburg, Deutschland</p>
+                <p>Tel.: +49 (0) 40-2093485-00</p>
+                <p>Fax.: +49 (0) 40-2093485-09</p>
+                <p>E-Mail: info@edu.umch.de</p>
+            </div>
+            <!-- Third Column: Image with text below it -->
+            <div class="col text-center small">
+                <img width="65px" height="65px" src="assets/logos/UMCH rund.svg" alt="UMCH 2"
+                    class="d-block mx-auto mb-2">
+                <p>Impressum</p>
+                <p>Datenschutz</p>
+            </div>
+            <!-- Fourth Column: Image with text below it -->
+            <div class="col text-center small">
+                <img width="65px" height="65px" src="assets/logos/Medaille.png" alt="Medaille"
+                    class="w-20 h-20 d-block mx-auto">
+                <p class="mt-2">George Emil Palade</p>
+                <p>Nobelpreisgewinner</p>
+                <p>und Namensgeber</p>
+                <p>der Universität</p>
+            </div>
+        </div>
+
+        <!-- Divider with text -->
+        <div class="d-flex align-items-center mx-auto px-4 w-100">
+            <span class="me-4">Eine Niederlassung der</span>
+            <div class="border-top border-2 border-secondary flex-grow-1"></div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="container mx-auto row row-cols-1 row-cols-md-4 g-3 px-4 py-4 small">
+            <!-- First Column: Image with text below it -->
+            <div class="col text-center">
+                <img style="width: auto;height: 50px;" src="assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png"
+                    alt="umfst-logo-neu_whiteENG-01-1-7" class="d-block">
+                <p class="mt-2">Universität für Medizin, Pharmazie,</p>
+                <p>Naturwissenschaften und Technik</p>
+                <p>Neumarkt am Mieresch</p>
+            </div>
+            <!-- Second Column: Contact Information -->
+            <div class="col text-center text-md-start">
+                <p class="fw-bold">Contact Us</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Email: contact@hospital.com</p>
+                <p>Address: 123 Health St, Medical City</p>
+            </div>
+            <!-- Third Column: Social Media Logos -->
+            <div class="col text-center">
+
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                    <img src="assets/bilder/Samy_Hoddie_outline.png" alt="Samy_Hoddie_outline"
+                        class="img-fluid w-25 me-3">
+                    <img src="data:image/png;base64,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"
+                        alt="Image 2" class="img-fluid w-50 mt-4">
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <a style="color: #fff;" href="#" class="mx-1"><i class="fab fa-instagram"></i></a>
+                    <a style="color: #fff;" href="#" class="mx-1"><i class="fab fa-tiktok"></i></a>
+                    <a style="color: #fff;" href="#" class="mx-1"><i class="fab fa-facebook"></i></a>
+                    <a style="color: #fff;" href="#" class="mx-1"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HTML with Tailwind CSS -->
+        <hr class="border-top border-light my-4">
+
+        <!-- Third Row -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center px-4 py-2">
+            <div class="container d-flex justify-content-between w-100">
+                <!-- Language Selection -->
+
+                <!-- Main Content Area -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
+                    <!-- First Text on the Left -->
+                    <div class="text-start mb-4 mb-md-0">
+                        <p class="small">
+                            @2024 – UMCH – Universitätsmedizin Neumarkt am Mieresch Campus Hamburg
+                        </p>
+                    </div>
+
+                    <!-- Container for Three Texts on the Right -->
+
+
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-end text-center">
+                        <a href="#" style="color: #fff;" class="mx-2 text-decoration-underline mb-2 mb-md-0">UMCH
+                            Shop</a>
+                        <a href="#" style="color: #fff;" class="mx-2 text-decoration-underline mb-2 mb-md-0">UMCH
+                            Medical Foundation
+                            Track</a>
+                        <a href="#" style="color: #fff;" class="mx-2 text-decoration-underline mb-2 mb-md-0">
+                            <i class="far fa-envelope me-1"></i> Contact us
+                        </a>
+                    </div>
+                    <div class="d-flex mb-2 mb-md-0">
+                        <p class="mx-2">DE</p>
+                        <p>ENG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
