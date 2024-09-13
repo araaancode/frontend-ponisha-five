@@ -11,636 +11,7 @@
     <link rel="shortcut icon" href="https://edu.umch.de/wp-content/uploads/2018/09/favicon-32x32.opt_.png"
         type="image/x-icon">
 
-    <style>
-        .banner {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .banner-left img {
-            width: 100%;
-            height: auto;
-        }
-
-        .banner-right img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .banner-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            text-align: center;
-        }
-    </style>
-
-    <style>
-        .hospital-img {
-            width: 100%;
-            height: auto;
-        }
-
-        .card-img-top {
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .footer {
-            background-color: #f8f9fa;
-        }
-
-        .icon-right {
-            width: auto;
-            height: 50px;
-            margin-right: 50px;
-        }
-
-        .icon-left {
-            width: auto;
-            height: 50px;
-        }
-    </style>
-    <style>
-        .svg {
-            fill: #fff;
-            width: 30px;
-            height: 30px;
-            color: #fff;
-            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
-            font-weight: bold;
-        }
-
-        .ok-svg {
-            fill: #fff;
-            width: 50px;
-            height: 50px;
-            margin-right: 5px;
-            margin-bottom: 12px;
-        }
-
-
-        .navbar-text {
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: center;
-        }
-
-
-        .jetzt {
-            background-color: #ffe943;
-            color: #1b3a54;
-            cursor: pointer;
-            padding: 1px 20px;
-            border: 0;
-            padding: 6px 20px;
-            border-radius: 20px;
-        }
-
-        .whatsup-icon {
-            width: 30px;
-            height: 30px;
-            margin-left: 5px;
-        }
-
-        .circle-container {
-            width: 30px;
-            height: 30px;
-            border: 3px solid #ddd;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .circle-container img {
-            fill: #fff;
-            width: 20px;
-            height: 20px;
-            color: #fff;
-            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
-            font-weight: bold;
-        }
-
-        .germany-navbar {
-            margin-left: 50px;
-        }
-
-        .germany-navbar i {
-            margin-left: 5px;
-        }
-
-        .navbar-right {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-right: 10px;
-        }
-
-        .navbar-right svg {
-            width: 30px;
-            height: 30px;
-        }
-
-        .link {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .navbar {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 0 auto;
-            justify-content: center;
-            background-color: #004f71;
-            padding: 10px 50px;
-        }
-    </style>
-
-    <style>
-        .search-container {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            padding: 5px 10px;
-            max-width: 300px;
-            margin-right: 50px;
-        }
-
-        .search-input {
-            border: none;
-            outline: none;
-            flex-grow: 1;
-            background-color: #1b3a54;
-        }
-
-        .search-icon {
-            cursor: pointer;
-            color: #fff;
-        }
-    </style>
-
-
-
-    <style>
-        .about-icons {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            color: #1b3a54;
-            margin-bottom: 70px;
-        }
-
-        .about-img {
-            width: 150px;
-            height: 750px;
-        }
-
-        .about-card {
-            background-color: #ccc;
-            margin: 20px 500px 10px 0;
-            color: #1b3a54;
-            padding: 20px;
-            width: 800px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .middle {
-            display: flex;
-            flex-direction: row;
-            color: #1b3a54;
-        }
-    </style>
-
-    <style>
-        .properties {
-            background-color: #f3f4f6;
-        }
-
-        .prop-icon {
-            width: 100px;
-            height: 100px;
-            background-color: #fff;
-            border-radius: 50%;
-            padding: 4px 20px;
-        }
-
-        .properties button {
-            background-color: #ffe943;
-            color: #1b3a54;
-            cursor: pointer;
-            padding: 1px 20px;
-            border: 0;
-            padding: 6px 20px;
-            border-radius: 20px;
-            width: 200px;
-            margin: 5px auto;
-
-        }
-
-        .properties h1 {
-            margin-top: 2px;
-            margin-bottom: 20px;
-            font-size: 30px;
-            color: #1b3a54;
-        }
-    </style>
-
-    <style>
-        .card-three {
-            background-color: #f3f4f6;
-            color: #1b3a54;
-            margin-top: 10px;
-            height: 100%;
-        }
-
-        .card-three img {
-            width: 100%;
-        }
-
-        .card-three .card-body {
-            padding: 20px 30px;
-        }
-
-        .three {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            padding: 50px 20px;
-        }
-    </style>
-
-    <style>
-        .interview {
-            padding: 50px;
-        }
-
-        .card-header-one {
-            background-color: #009cd3;
-            width: 100%;
-            height: 50px;
-        }
-
-        .card-header-two {
-            background-color: #00577b;
-            width: 100%;
-            height: 50px;
-        }
-
-        .card-text {
-            color: #1b3a54;
-        }
-
-        .card-header-one,
-        .card-header-two {
-            text-align: left;
-        }
-
-        .card-header-one p {
-            margin-top: 12px;
-            font-size: 20px;
-            font-weight: bold;
-
-            margin-left: 20px;
-        }
-
-        .card-header-two p {
-            margin-top: 12px;
-            font-size: 20px;
-            font-weight: bold;
-
-            margin-left: 20px;
-            color: #fff;
-        }
-
-        .interview-card {
-            height: 100%;
-            background-color: #fff;
-            margin-top: 50px;
-        }
-
-        .interview-card img {
-            width: 100%;
-            background-color: #fff;
-        }
-
-        .interview-card .card-body {
-            background-color: #fff;
-            padding: 20px;
-        }
-
-        .last-interview {
-            background: linear-gradient(to left, #00678f, #018dc0);
-            margin: 50px 0;
-            padding: 50px;
-            height: 75%;
-        }
-
-        .interview-card-one {
-            height: 75%;
-            background-color: #fff;
-            margin-top: 50px;
-        }
-    </style>
-
-
-
-    <style>
-        /* Custom styles for the layout */
-        .fixed-image {
-            width: 100%;
-            height: auto;
-        }
-
-        .content-image {
-            width: 100%;
-            height: auto;
-        }
-
-        .custom-card {
-            width: 100%;
-            border: 0;
-            background-color: #f3f4f6;
-            padding: 20px;
-            border-radius: 0;
-            color: #1b3a54;
-        }
-    </style>
-
-    <style>
-        .two-cards {
-            background-color: #f3f4f6;
-            padding: 100px;
-        }
-
-        .two-card {
-            border: 0;
-            text-align: center;
-        }
-
-        .two-card .card-body {
-            padding: 10px;
-            color: #1b3a54;
-            margin-top: 45px;
-        }
-
-        .two-card .card-body .card-title {
-            font-weight: bold;
-        }
-
-        .two-card-btn {
-            background-color: #b3b3b3;
-            color: #1b3a54;
-            border-radius: 20px;
-            padding: 8px 60px;
-            cursor: pointer;
-            border: 0;
-            margin-top: 30px;
-        }
-    </style>
-
-    <style>
-        .camera-btn {
-            border-radius: 30px;
-            color: #1b3a54;
-            border: 0;
-            padding: 5px 20px;
-            background-color: #ffe943;
-        }
-
-        .camera-btn span {
-            margin: 5px;
-        }
-
-        .camera-btn img {
-            fill: #fff;
-            width: 30px;
-            height: 30px;
-            color: #1b3a54;
-            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
-            font-weight: bold;
-        }
-    </style>
-
-    <style>
-        .blue-button {
-            padding: 8px 20px;
-            border: 1px solid #1b3a54;
-            border-radius: 20px;
-            color: #1b3a54;
-            background-color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-        }
-
-        .download-icon {
-            margin: 10px auto;
-            width: 65px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-        }
-    </style>
-
-    <style>
-        .responsive-separator {
-            border: none;
-            height: 1px;
-            background-color: #fff;
-            width: 100%;
-            margin: 1rem 0;
-        }
-
-        .icon-list {
-            background: linear-gradient(to bottom, #00577b, #009cd3);
-        }
-    </style>
-
-    <style>
-        .separator {
-            width: 2px;
-            height: 24px;
-            background-color: white;
-        }
-
-        .site-links {
-            color: #1b3a54;
-            margin: 0 auto;
-            width: 75%;
-        }
-    </style>
-
-    <style>
-        .font-bold {
-            font-weight: bold;
-        }
-    </style>
-
-    <style>
-        /* Custom styles for rows */
-        .row-blue {
-            background-color: #1b3a54;
-            color: white;
-            /* White text for better contrast on blue background */
-        }
-
-        .row-white {
-            background-color: white;
-            color: black;
-            /* Default black text for contrast on white background */
-        }
-    </style>
-
-    <style>
-        .primary-color {
-            color: #1b3a54;
-        }
-
-        .secondary-color {
-            color: #004d6e;
-        }
-
-        .text-decoration-none {
-            text-decoration: none;
-            list-style-type: none;
-        }
-    </style>
-
-    <style>
-        .text-right-align {
-            text-align: right;
-        }
-
-        .card-horizontal {
-            display: flex;
-            flex: 1 1 auto;
-            background-color: #dfe4e8;
-        }
-
-        .card-horizontal img {
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .card-right {
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .body-right {
-            padding: 25px;
-        }
-
-        .card-color {
-            background-color: #f4f4f4;
-        }
-    </style>
-
-
-    <style>
-        .bg-gradient {
-            background: linear-gradient(to bottom, #005072, #009ad0);
-        }
-    </style>
-
-    <style>
-        .left-part {
-            background: linear-gradient(to bottom, #005072, #009ad0);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .left-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .left-content i {
-            font-size: 40px;
-            /* Icon size */
-            margin-bottom: 15px;
-        }
-
-        .right-part img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        @media (max-width: 768px) {
-            .card {
-                flex-direction: column;
-            }
-        }
-    </style>
-
-    <style>
-        .slider-container {
-            margin-bottom: 30px;
-        }
-
-        .card {
-            margin: 10px;
-        }
-
-        .slider-buttons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .pagination-dots {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .pagination-dots li {
-            margin: 0 5px;
-            cursor: pointer;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            bottom: 0;
-            top: auto;
-            width: 5%;
-        }
-
-        .text-white {
-            color: #fff;
-        }
-
-        .circle-camera {
-            padding: 4px 5px;
-            border: 3px solid #ffe943;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -710,22 +81,29 @@
             <button class="jetzt">Jetzt bewerben</button>
         </div>
     </header>
-
     <div class="my-3 site-links">
         <div class="row">
-            <li class="col list-group-item"><a href="#"
-                    class="w-100 list-group-item list-group-item-action me-4">Universität <i
-                        class="fas fa-chevron-down"></i></a></li>
-            <li class="col list-group-item"><a href="#" class="w-100 list-group-item list-group-item-action">Studium <i
-                        class="fas fa-chevron-down"></i></a></li>
-            <li class="col list-group-item"><a href="#"
-                    class="w-100 list-group-item list-group-item-action">Lehrkrankenhäuser <i
-                        class="fas fa-chevron-down"></i></a></li>
-            <li class="col list-group-item"><a href="#"
-                    class="w-100 list-group-item list-group-item-action">Forschung</a></li>
-            <li class="col list-group-item"><a href="#" class="w-100 list-group-item list-group-item-action">Aktuelles
-                    <i class="fas fa-chevron-down"></i></a> </li>
-            <li class="col list-group-item"><a href="#" class="w-100 list-group-item list-group-item-action">Kontakt</a>
+            <li class="col list-group-item">
+                <a href="#" class="w-100 list-group-item list-group-item-action me-4 font-bold">Universität <i
+                        class="fas fa-chevron-down"></i></a>
+            </li>
+            <li class="col list-group-item">
+                <a href="#" class="w-100 list-group-item list-group-item-action font-bold">Studium <i
+                        class="fas fa-chevron-down"></i></a>
+            </li>
+            <li class="col list-group-item">
+                <a href="#" class="w-100 list-group-item list-group-item-action font-bold">Lehrkrankenhäuser <i
+                        class="fas fa-chevron-down"></i></a>
+            </li>
+            <li class="col list-group-item">
+                <a href="#" class="w-100 list-group-item list-group-item-action font-bold">Forschung</a>
+            </li>
+            <li class="col list-group-item">
+                <a href="#" class="w-100 list-group-item list-group-item-action font-bold">Aktuelles
+                    <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li class="col list-group-item">
+                <a href="#" class="w-100 list-group-item list-group-item-action font-bold">Kontakt</a>
             </li>
         </div>
     </div>
@@ -746,10 +124,10 @@
 
             <!-- Centered Text -->
             <div class="banner-text">
-                <h1 class="text-center">Medizincampus
+                <h1 class="text-center font-bold text-xl">Medizincampus
                     der Zukunft</h1>
-                <h4 class="text-center">Hochmoderne medizinische Ausbildung
-                    im Herzen Hamburgs</h4>
+                <h5 class="text-center font-bold">Hochmoderne medizinische Ausbildung
+                    im Herzen Hamburgs</h5>
             </div>
         </div>
     </div>
@@ -759,345 +137,72 @@
         <div class="col-md-2 about-img">
             <img src="assets/bilder/Blue Color gradient2.png" alt="Blue Color gradient2" class="about-img">
         </div>
-        <div style="margin: 50px auto;" class="col-md-6">
+        <div class="col-md-6 margin-top">
             <div class="about-icons mt-1">
                 <i class="fas fa-home me-2"></i>
-                <span>Universität</span>
+                <span class="font-bold">Universität</span>
                 <i class="fas fa-chevron-right mx-2"></i>
-                <span>Campus Hamburg</span>
+                <span class="font-bold">Campus Hamburg</span>
             </div>
 
             <div class="my-2">
                 <div class="row align-items-center">
                     <div class="col-md-12">
-                        <p class="text-center">Technologie trifft Medizin</p>
-                        <h3 class="text-center mb-6">Modernste Ausstattung und hochdigitaler
-                            Universitätscampus in Hamburg</h3>
-                        <img src="3d.png" alt="">
+                        <h5 class="text-center font-bold text-gray-300">Technologie trifft Medizin</h5>
+                        <h2 class="text-center mb-8">Modernste Ausstattung und hochdigitaler
+                            Universitätscampus in Hamburg</h2>
+                        <img class="mt-4" src="3d.png" alt="">
                     </div>
                 </div>
-            </div>
-
-
-        </div>
-
-    </div>
-
-    <!-- card with image and text -->
-    <div class="container my-5">
-        <div class="card d-flex flex-row">
-            <!-- Left part with blue background and icon + text -->
-            <div class="left-part col-md-6">
-                <div class="left-content">
-                    <img width="30" height="30" src="assets/icon/Icon Hightec.svg" alt="Hightec">
-                    <h3>Entdecke eine hochmoderne
-                        medizinische Ausbildung
-                        in einem internationalen
-                        Umfeld.</h3>
-                    <p>Mit dem digitalen Campus geht der UMCH neue Wege in der
-                        Ausbildung der Ärztinnen und Ärzte von morgen. Die Bereitstel-
-                        lung einer hochmodernen digitalen Infrastruktur wurde bereits
-                        frühzeitig im Rahmen der Campuserrichtung im Jahr 2019 be-
-                        gonnen umzusetzen. Der UMCH verfügt über eine umfassende
-                        digitale Ausstattung, die stetig nachgerüstet wird und virtuell
-                        basierte Lehr- und Lernprozesse ermöglicht. Damit bieten wir
-                        unseren Studierenden herausragende Studienbedingungen.</p>
-                </div>
-            </div>
-
-            <!-- Right part with an image -->
-            <div class="right-part col-md-6">
-                <img src="vr.png" alt="Sample Image">
             </div>
         </div>
     </div>
 
-
-    <!-- photo sliders -->
-
-    <div class="container">
-
-        <!-- First Photo Slider -->
-        <div id="slider1" class="carousel slide slider-container" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="" style=" background: linear-gradient(to left, #005072, #009ad0);">
-                                <img src="card1.png" class="card-img-top" alt="Image 1">
-                                <div class="card-body p-4 text-white">
-                                    <div class="circle-camera">
-                                        <img src="assets/icon/Icon Camera.svg" width="25" height="25">
-                                    </div>
-                                    <h4 class="mt-4">Livestreaming – Kursinhalte
-                                        nachhaltig verfügbar</h4>
-                                    <p class="card-text text-white">Der Campus ist mit Technik zum Livestreaming
-                                        ausgestat-
-                                        tet. Sämtliche Vorlesungs- und Seminarräume sind mit
-                                        mehreren High Definition-Kameras bestückt, mit denen die
-                                        Lehrveranstaltungen aus verschiedenen Perspektiven live
-                                        Die Studierenden profitieren zu
-                                        lichkeit zahlreicher digitaler Bib
-                                        Spektrum an englischsprachige
-                                        Auf unserer digitalen Lernplattform erhalten die UMCH-Stu-
-                                        bereitstellen. Sie können uneing
-                                        dierenden an einem Ort gebündelt alle Informationen und
-                                        tätseigene Online-Bibliothek zu
-                                        Neuigkeiten rund um das Studium und den Campus. Sie
-                                        übertragen und aufgezeichnet werden. Gleichzeitig kön-
-                                        unter anderem bei SpringerLink
-                                        bildet die Grundlage für das digitale Lernen und die Kom-
-                                        nen die Studierende, die online am Unterricht teilnehmen,
-                                        bridge Journals recherchiert we
-                                        munikation unter den Studierenden und Dozentinnen und
-                                        zudem die Präsentationen einsehen und den schriftlichen
-                                        Anmerkungen folgen, die per interaktivem Smartboard von
-                                        den Dozentinnen und Dozenten vorgenommen werden.
-                                    </p>
+    <!-- campus -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <h5 class="text-center font-bold text-gray-400">Digitales Studium am Puls der Zeit</h5>
+            <h2 class="font-bold text-center mb-4 primary-color">Medizincampus der Zukunft</h2>
+            <div class="col-md-10">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="card-body left-part">
+                                <div class="icon">
+                                    <img width="45" height="45" src="assets/icon/Icon Hightec.svg" alt="Icon Hightec">
                                 </div>
+                                <h3 class="card-title font-bold text-white">Entdecke eine hochmoderne
+                                    medizinische Ausbildung
+                                    in einem internationalen
+                                    Umfeld.</h3>
+                                <p class="card-text mt-4 text-white">Mit dem digitalen Campus geht der UMCH neue Wege in
+                                    der
+                                    Ausbildung der Ärztinnen und Ärzte von morgen. Die Bereitstel-
+                                    lung einer hochmodernen digitalen Infrastruktur wurde bereits
+                                    frühzeitig im Rahmen der Campuserrichtung im Jahr 2019 be-
+                                    gonnen umzusetzen. Der UMCH verfügt über eine umfassende
+                                    digitale Ausstattung, die stetig nachgerüstet wird und virtuell
+                                    basierte Lehr- und Lernprozesse ermöglicht. Damit bieten wir
+                                    unseren Studierenden herausragende Studienbedingungen.</p>
                             </div>
                         </div>
-
-                        <div class="col-md-4">
-                            <div class="" style=" background: linear-gradient(to left, #005072, #009ad0);">
-                                <img src="card2.png" class="card-img-top" alt="Image 1">
-                                <div class="card-body p-4 text-white">
-                                    <div class="circle-camera">
-                                        <img src="assets/icon/Icon Camera.svg" width="25" height="25">
-                                    </div>
-                                    <h4 class="mt-4">Livestreaming – Kursinhalte
-                                        nachhaltig verfügbar</h4>
-                                    <p class="card-text text-white">Der Campus ist mit Technik zum Livestreaming
-                                        ausgestat-
-                                        tet. Sämtliche Vorlesungs- und Seminarräume sind mit
-                                        mehreren High Definition-Kameras bestückt, mit denen die
-                                        Lehrveranstaltungen aus verschiedenen Perspektiven live
-                                        Die Studierenden profitieren zu
-                                        lichkeit zahlreicher digitaler Bib
-                                        Spektrum an englischsprachige
-                                        Auf unserer digitalen Lernplattform erhalten die UMCH-Stu-
-                                        bereitstellen. Sie können uneing
-                                        dierenden an einem Ort gebündelt alle Informationen und
-                                        tätseigene Online-Bibliothek zu
-                                        Neuigkeiten rund um das Studium und den Campus. Sie
-                                        übertragen und aufgezeichnet werden. Gleichzeitig kön-
-                                        unter anderem bei SpringerLink
-                                        bildet die Grundlage für das digitale Lernen und die Kom-
-                                        nen die Studierende, die online am Unterricht teilnehmen,
-                                        bridge Journals recherchiert we
-                                        munikation unter den Studierenden und Dozentinnen und
-                                        zudem die Präsentationen einsehen und den schriftlichen
-                                        Anmerkungen folgen, die per interaktivem Smartboard von
-                                        den Dozentinnen und Dozenten vorgenommen werden.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="" style=" background: linear-gradient(to left, #005072, #009ad0);">
-                                <img src="https://edu.umch.de/wp-content/uploads/2021/11/Lehre.jpg" class="card-img-top"
-                                    alt="Image 1">
-                                <div class="card-body p-4 text-white">
-                                    <div class="circle-camera">
-                                        <img src="assets/icon/Icon Camera.svg" width="25" height="25">
-                                    </div>
-                                    <h4 class="mt-4">Livestreaming – Kursinhalte
-                                        nachhaltig verfügbar</h4>
-                                    <p class="card-text text-white">Der Campus ist mit Technik zum Livestreaming
-                                        ausgestat-
-                                        tet. Sämtliche Vorlesungs- und Seminarräume sind mit
-                                        mehreren High Definition-Kameras bestückt, mit denen die
-                                        Lehrveranstaltungen aus verschiedenen Perspektiven live
-                                        Die Studierenden profitieren zu
-                                        lichkeit zahlreicher digitaler Bib
-                                        Spektrum an englischsprachige
-                                        Auf unserer digitalen Lernplattform erhalten die UMCH-Stu-
-                                        bereitstellen. Sie können uneing
-                                        dierenden an einem Ort gebündelt alle Informationen und
-                                        tätseigene Online-Bibliothek zu
-                                        Neuigkeiten rund um das Studium und den Campus. Sie
-                                        übertragen und aufgezeichnet werden. Gleichzeitig kön-
-                                        unter anderem bei SpringerLink
-                                        bildet die Grundlage für das digitale Lernen und die Kom-
-                                        nen die Studierende, die online am Unterricht teilnehmen,
-                                        bridge Journals recherchiert we
-                                        munikation unter den Studierenden und Dozentinnen und
-                                        zudem die Präsentationen einsehen und den schriftlichen
-                                        Anmerkungen folgen, die per interaktivem Smartboard von
-                                        den Dozentinnen und Dozenten vorgenommen werden.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more carousel items here if needed -->
-            </div>
-
-            <div class="slider-buttons">
-                <!-- Pagination Dots -->
-                <ul class="pagination-dots">
-                    <li data-bs-target="#slider1" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
-                </ul>
-
-                <div class="d-flex">
-                    <button class="carousel-control-prev me-2" type="button" data-bs-target="#slider1"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next ms-2" type="button" data-bs-target="#slider1"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Second Photo Slider (same structure as first slider) -->
-        <div id="slider2" class="carousel slide slider-container" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div>
-                                <img src="card3.png" class="card-img-top" alt="Image 1">
-                                <div class="card-body p-4 text-white" style=" background: linear-gradient(to left, #005072, #009ad0);">
-                                    <h4 class="text-white">Biologie-Labs mit neuester Technik</h4>
-                                    <p class="text-white">Unsere hochmodernen Biologie-Labore sind ein zentraler Be-
-                                        standteil des UMCH. Sie bieten den Studierenden nicht nur die
-                                        Möglichkeit, theoretisches Wissen in die Praxis umzusetzen,
-                                        sondern auch innovative Forschung und Experimente durch-
-                                        zuführen. Mit neuester Technologie und umfangreicher Aus-
-                                        stattung unterstützen unsere Labore eine breite Palette von
-                                        biologischen Studien und Forschungsprojekten. So können die
-                                        Studierenden in einem realitätsnahen Umfeld arbeiten, ihre
-                                        praktischen Fähigkeiten vertiefen und wichtige Erkenntnisse
-                                        für ihre zukünftige Karriere gewinnen.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div>
-                                <img src="card4.png" class="card-img-top" alt="Image 2">
-                                <div class="card-body p-4 text-white" style=" background: linear-gradient(to left, #005072, #009ad0);">
-                                    <h4 class="text-white">Hochmoderne Chemie-Labs</h4>
-                                    <p class="text-white">Als zentraler Bestandteil der Ausbildung ermöglichen die
-                                        UMCH Chemie-Labs es den Studierenden, theoretisches Wis-
-                                        sen praxisnah anzuwenden und innovative Forschung sowie
-                                        Experimente durchzuführen. Ausgestattet mit neuester Tech-
-                                        nologie und umfangreicher Ausrüstung, bieten die Labore viel-
-                                        fältige Unterstützung für chemische Studien und Forschungs-
-                                        projekte.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div>
-                                <img src="card4.png" class="card-img-top" alt="Image 2">
-                                <div class="card-body p-4 text-white" style=" background: linear-gradient(to left, #005072, #009ad0);">
-                                    <h4 class="text-white">Hochmoderne Chemie-Labs</h4>
-                                    <p class="text-white">Als zentraler Bestandteil der Ausbildung ermöglichen die
-                                        UMCH Chemie-Labs es den Studierenden, theoretisches Wis-
-                                        sen praxisnah anzuwenden und innovative Forschung sowie
-                                        Experimente durchzuführen. Ausgestattet mit neuester Tech-
-                                        nologie und umfangreicher Ausrüstung, bieten die Labore viel-
-                                        fältige Unterstützung für chemische Studien und Forschungs-
-                                        projekte.</p>
-                                </div>
-                            </div>
+                        <div class="col-md-6 image-container">
+                            <img src="assets/img/virtual-reality.png" class="img-fluid" alt="Image">
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="slider-buttons">
-                <!-- Pagination Dots -->
-                <ul class="pagination-dots">
-                    <li data-bs-target="#slider2" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#slider2" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#slider2" data-bs-slide-to="2"></li>
-                </ul>
-
-                <div class="d-flex">
-                    <button class="carousel-control-prev me-2" type="button" data-bs-target="#slider2"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next ms-2" type="button" data-bs-target="#slider2"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
         </div>
-
-        <!-- Third Photo Slider (same structure as the other sliders) -->
-        <div id="slider3" class="carousel slide slider-container" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 1">
-                                <div class="card-body">
-                                    <p class="card-text">Slider 3, Image 1</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 2">
-                                <div class="card-body">
-                                    <p class="card-text">Slider 3, Image 2</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image 3">
-                                <div class="card-body">
-                                    <p class="card-text">Slider 3, Image 3</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slider-buttons">
-                <!-- Pagination Dots -->
-                <ul class="pagination-dots">
-                    <li data-bs-target="#slider3" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#slider3" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#slider3" data-bs-slide-to="2"></li>
-                </ul>
-
-                <div class="d-flex">
-                    <button class="carousel-control-prev me-2" type="button" data-bs-target="#slider3"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next ms-2" type="button" data-bs-target="#slider3"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
     </div>
+
+
+    <!-- photo slider 1 -->
+   
+
+    <!-- photo slider 2 -->
+
+
+    <!-- photo slider 3 -->
 
 
     <!-- Text and Button -->
@@ -1229,10 +334,8 @@
         </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-
 
 </body>
 

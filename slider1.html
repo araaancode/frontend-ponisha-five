@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Image Sliders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .slider-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-item {
+            min-width: 33.33%;
+        }
+
+        .slider-pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .slider-pagination .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .slider-pagination .dot.active {
+            background-color: white;
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .slider-controls button {
+            background-color: #1b3a54;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- Slider 1 -->
+        <div class="slider-container">
+            <div class="slider-track" id="slider1-track">
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+1" class="img-fluid" alt="Image 1">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+2" class="img-fluid" alt="Image 2">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+3" class="img-fluid" alt="Image 3">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+4" class="img-fluid" alt="Image 4">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+5" class="img-fluid" alt="Image 5">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+6" class="img-fluid" alt="Image 6">
+                </div>
+            </div>
+            <div class="slider-controls mt-3">
+                <button class="slider-prev" data-slider="1">&lt;</button>
+                <div class="slider-pagination" id="slider1-pagination">
+                    <div class="dot active" data-slide="0"></div>
+                    <div class="dot" data-slide="1"></div>
+                    <div class="dot" data-slide="2"></div>
+                    <div class="dot" data-slide="3"></div>
+                    <div class="dot" data-slide="4"></div>
+                    <div class="dot" data-slide="5"></div>
+                </div>
+                <button class="slider-next" data-slider="1">&gt;</button>
+            </div>
+        </div>
+
+        <!-- Slider 2 -->
+        <div class="slider-container mt-5">
+            <div class="slider-track" id="slider2-track">
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+1" class="img-fluid" alt="Image 1">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+2" class="img-fluid" alt="Image 2">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+3" class="img-fluid" alt="Image 3">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+4" class="img-fluid" alt="Image 4">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+5" class="img-fluid" alt="Image 5">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+6" class="img-fluid" alt="Image 6">
+                </div>
+            </div>
+            <div class="slider-controls mt-3">
+                <button class="slider-prev" data-slider="2">&lt;</button>
+                <div class="slider-pagination" id="slider2-pagination">
+                    <div class="dot active" data-slide="0"></div>
+                    <div class="dot" data-slide="1"></div>
+                    <div class="dot" data-slide="2"></div>
+                    <div class="dot" data-slide="3"></div>
+                    <div class="dot" data-slide="4"></div>
+                    <div class="dot" data-slide="5"></div>
+                </div>
+                <button class="slider-next" data-slider="2">&gt;</button>
+            </div>
+        </div>
+
+        <!-- Slider 3 -->
+        <div class="slider-container mt-5">
+            <div class="slider-track" id="slider3-track">
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+1" class="img-fluid" alt="Image 1">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+2" class="img-fluid" alt="Image 2">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+3" class="img-fluid" alt="Image 3">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+4" class="img-fluid" alt="Image 4">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+5" class="img-fluid" alt="Image 5">
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/400x300?text=Image+6" class="img-fluid" alt="Image 6">
+                </div>
+            </div>
+            <div class="slider-controls mt-3">
+                <button class="slider-prev" data-slider="3">&lt;</button>
+                <div class="slider-pagination" id="slider3-pagination">
+                    <div class="dot active" data-slide="0"></div>
+                    <div class="dot" data-slide="1"></div>
+                    <div class="dot" data-slide="2"></div>
+                    <div class="dot" data-slide="3"></div>
+                    <div class="dot" data-slide="4"></div>
+                    <div class="dot" data-slide="5"></div>
+                </div>
+                <button class="slider-next" data-slider="3">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setupSlider(sliderId) {
+            const track = document.getElementById(`slider${sliderId}-track`);
+            const dots = document.querySelectorAll(`#slider${sliderId}-pagination .dot`);
+            const prevBtn = document.querySelector(`.slider-prev[data-slider="${sliderId}"]`);
+            const nextBtn = document.querySelector(`.slider-next[data-slider="${sliderId}"]`);
+            const totalSlides = dots.length;
+            let currentSlide = 0;
+
+            function updateSlider() {
+                const offset = currentSlide * -33.33;
+                track.style.transform = `translateX(${offset}%)`;
+
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[currentSlide].classList.add('active');
+            }
+
+            nextBtn.addEventListener('click', () => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateSlider();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateSlider();
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index;
+                    updateSlider();
+                });
+            });
+        }
+
+        setupSlider(1);
+        setupSlider(2);
+        setupSlider(3);
+    </script>
+</body>
+
+</html>
