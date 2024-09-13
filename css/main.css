@@ -610,6 +610,92 @@ nav {
 }
 
 
+
+/* slider css */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    background: linear-gradient(to left, #005072, #009ad0);
+    min-width: 33.33%;
+    margin: 0 10px;
+    
+}
+
+.slider-item img{
+    width: 100%;
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    background-color: #c7c7c7;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.slider-pagination .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-pagination .dot.active {
+    background-color: white;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-controls button {
+    background-color: #c7c7c7;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+.slider-card-content{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.svg-circle{
+    padding: 4px 6px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ffe943;
+    text-align: center;
+}
+
+
+
+
+
+
+
 /* additional css */
 .text-white {
     color: #fff;
@@ -634,6 +720,16 @@ nav {
 .text-gray-400 {
     color: #888;
 }
+
+.bg-gray-300{
+    background-color: #999;
+}
+
+
+.bg-gray-400{
+    background-color: #888;
+}
+
 
 .img-center {
     margin: 0 auto;
@@ -663,5 +759,3 @@ nav {
     text-align: right;
 }
 
-
-/* slider css */

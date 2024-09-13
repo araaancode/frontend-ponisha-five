@@ -25,14 +25,16 @@
         .slider-pagination {
             display: flex;
             justify-content: center;
-            margin-top: 10px;
+            background-color: #c7c7c7;
+            padding: 15px;
+            border-radius: 25px;
         }
 
         .slider-pagination .dot {
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: gray;
+            background-color: #333;
             margin: 0 5px;
             cursor: pointer;
         }
@@ -43,22 +45,25 @@
 
         .slider-controls {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
 
         .slider-controls button {
-            background-color: #1b3a54;
+            background-color: #c7c7c7;
             border: none;
             color: white;
-            padding: 10px;
+            padding: 10px 15px;
             cursor: pointer;
+            border-radius: 50%;
+            margin: 0 18px;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div class="container my-5">
         <!-- Slider 1 -->
         <div class="slider-container">
             <div class="slider-track" id="slider1-track">
@@ -96,7 +101,7 @@
         </div>
 
         <!-- Slider 2 -->
-        <div class="slider-container mt-5">
+        <div class="slider-container my-5">
             <div class="slider-track" id="slider2-track">
                 <div class="slider-item">
                     <img src="https://via.placeholder.com/400x300?text=Image+1" class="img-fluid" alt="Image 1">
@@ -132,7 +137,7 @@
         </div>
 
         <!-- Slider 3 -->
-        <div class="slider-container mt-5">
+        <div class="slider-container my-5">
             <div class="slider-track" id="slider3-track">
                 <div class="slider-item">
                     <img src="https://via.placeholder.com/400x300?text=Image+1" class="img-fluid" alt="Image 1">
